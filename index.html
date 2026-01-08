@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wawancara Calon Wali Santri</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .container {
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            padding: 50px 40px;
+            max-width: 600px;
+            width: 100%;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 15px;
+            font-size: 28px;
+        }
+
+        .subtitle {
+            text-align: center;
+            color: #666;
+            margin-bottom: 40px;
+            font-size: 16px;
+        }
+
+        .link-container {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .link-card {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border-radius: 12px;
+            padding: 25px;
+            text-decoration: none;
+            color: white;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+        }
+
+        .link-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(102, 126, 234, 0.5);
+        }
+
+        .link-number {
+            font-size: 14px;
+            opacity: 0.9;
+            margin-bottom: 8px;
+            font-weight: 600;
+        }
+
+        .link-title {
+            font-size: 20px;
+            font-weight: bold;
+            line-height: 1.4;
+        }
+
+        .link-arrow {
+            float: right;
+            font-size: 24px;
+            line-height: 1;
+        }
+
+        footer {
+            margin-top: 40px;
+            text-align: center;
+            color: #999;
+            font-size: 14px;
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                padding: 30px 25px;
+            }
+
+            h1 {
+                font-size: 24px;
+            }
+
+            .link-title {
+                font-size: 18px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Wawancara Calon Wali Santri</h1>
+        <p class="subtitle">Silakan pilih marhalah sesuai dengan tingkatan santri</p>
+        
+        <div class="link-container">
+            <a href="#" class="link-card" id="link1">
+                <div class="link-number">Marhalah 1</div>
+                <div class="link-title">
+                    Wawancara Calon Wali Santri Marhalah Ula
+                    <span class="link-arrow">→</span>
+                </div>
+            </a>
+
+            <a href="#" class="link-card" id="link2">
+                <div class="link-number">Marhalah 2</div>
+                <div class="link-title">
+                    Wawancara Calon Wali Santri Marhalah Wustha
+                    <span class="link-arrow">→</span>
+                </div>
+            </a>
+
+            <a href="#" class="link-card" id="link3">
+                <div class="link-number">Marhalah 3</div>
+                <div class="link-title">
+                    Wawancara Calon Wali Santri Marhalah Ulya
+                    <span class="link-arrow">→</span>
+                </div>
+            </a>
+        </div>
+
+        <footer>
+            © 2025 - Sistem Informasi Wawancara
+        </footer>
+    </div>
+
+    <script>
+        // Ganti URL di bawah ini dengan link wawancara yang sebenarnya
+        document.getElementById('link1').href = 'https://example.com/wawancara-ula';
+        document.getElementById('link2').href = 'https://example.com/wawancara-wustha';
+        document.getElementById('link3').href = 'https://example.com/wawancara-ulya';
+    </script>
+</body>
+</html>
